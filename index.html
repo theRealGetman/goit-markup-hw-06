@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1128px)">
 </head>
 
 <body>
@@ -470,7 +472,8 @@
                 </div>
 
                 <div class="modal-input checkbox">
-                    <input type="checkbox" class="form-input visually-hidden" value="true" name="user-privacy" id="user-privacy">
+                    <input type="checkbox" class="form-input visually-hidden" value="true" name="user-privacy"
+                        id="user-privacy">
                     <label class="form-label" for="user-privacy">
                         <span class="form-checkbox">
                             <svg class="form-checkbox-icon" width="10" height="8">
@@ -486,6 +489,69 @@
             </form>
         </div>
     </div>
+    <!-- #endregion -->
+
+    <!-- #region Mobile Menu -->
+    <div class="mobile-menu is-open">
+        <button class="close-btn">
+            <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link  active" href="#">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#">Contacts</a>
+            </li>
+        </ul>
+
+        <ul class="contacts-list">
+            <li class="contacts-item">
+                <a class="contacts-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="social-container">
+            <li class="social-item">
+                <a class="social-link" href="#">
+                    <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="#">
+                    <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="#">
+                    <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href="#">
+                    <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <!-- #endregion -->
 </body>
 
