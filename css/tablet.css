@@ -1,4 +1,14 @@
 @media only screen and (min-width: 768px) {
   .container {
   }
+
+  /* #region Modal */
+  .modal {
+    padding: 72px 24px 24px 24px;
+
+    width: 408px;
+    max-width: 408px;
+    min-height: 584px;
+  }
+  /* #endregion */
 }
