@@ -450,6 +450,7 @@ button {
 
 .footer .logo {
   display: inline-block;
+  padding: 0;
 }
 
 .footer-text {

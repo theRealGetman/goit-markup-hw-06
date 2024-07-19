@@ -16,6 +16,10 @@
   .section-container {
     padding: 96px 0;
   }
+
+  .logo {
+    padding: 24px 0;
+  }
   /* #endregion */
 
   /* #region Header */
@@ -33,7 +37,6 @@
   .nav-menu {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 40px;
   }
 
