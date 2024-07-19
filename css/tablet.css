@@ -1,6 +1,125 @@
 @media only screen and (min-width: 768px) {
-  .container {
+  /* #region Variables */
+  :root {
+    /* Others */
+    --items: 4;
+    --col-indent: 24px;
+    --row-indent: 48px;
   }
+  /* #endregion */
+
+  /* #region Common */
+  .container {
+    max-width: 1158px;
+  }
+
+  .section-container {
+    padding: 120px 0;
+  }
+  /* #endregion */
+
+  /* #region Header */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .nav-link {
+    position: relative;
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    transition: color var(--transition-time) var(--transition-timing-function);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--accent-color);
+  }
+
+  .nav-link.active {
+    color: var(--accent-color);
+  }
+
+  .nav-link.active::after {
+    position: absolute;
+    top: calc(100% - 4px);
+    bottom: -1px;
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+  /* #endregion */
+
+  /* #region Hero */
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+  /* #endregion */
+
+  /* #region Services */
+  .service-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    background: var(--cloud);
+    margin-bottom: 8px;
+  }
+
+  .service-item-title {
+    text-align: start;
+    color: var(--slate);
+  }
+
+  /* #endregion */
+
+  /* #region Team */
+
+  /* #endregion */
+
+  /* #region Portfolio */
+  .portfolio-item {
+    box-shadow: none;
+  }
+  /* #endregion */
+
+  /* #region Footer */
+  .footer.section-container {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    justify-items: start;
+    align-items: baseline;
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
+  }
+  /* #endregion */
 
   /* #region Modal */
   .modal {
