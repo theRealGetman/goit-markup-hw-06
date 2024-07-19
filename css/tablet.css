@@ -2,23 +2,34 @@
   /* #region Variables */
   :root {
     /* Others */
-    --items: 4;
+    --items: 2;
     --col-indent: 24px;
-    --row-indent: 48px;
+    --row-indent: 72px;
   }
   /* #endregion */
 
   /* #region Common */
   .container {
-    max-width: 1158px;
+    max-width: 736px;
   }
 
   .section-container {
-    padding: 120px 0;
+    padding: 96px 0;
   }
   /* #endregion */
 
   /* #region Header */
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav {
+    gap: 120px;
+  }
+
   .nav-menu {
     display: flex;
     align-items: center;
@@ -30,8 +41,12 @@
     position: relative;
     display: block;
     padding: 24px 0;
-    font-weight: 500;
     transition: color var(--transition-time) var(--transition-timing-function);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .nav-link:hover,
@@ -55,6 +70,27 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+
+  .contacts {
+    display: block;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
   /* #endregion */
 
   /* #region Hero */
@@ -77,47 +113,39 @@
   /* #endregion */
 
   /* #region Services */
-  .service-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    border: 1px solid var(--light-slate);
-    border-radius: 4px;
-    background: var(--cloud);
-    margin-bottom: 8px;
-  }
-
   .service-item-title {
     text-align: start;
-    color: var(--slate);
   }
 
   /* #endregion */
 
   /* #region Team */
-
-  /* #endregion */
-
-  /* #region Portfolio */
-  .portfolio-item {
-    box-shadow: none;
+  .team .container {
+    max-width: 552px;
   }
   /* #endregion */
 
   /* #region Footer */
   .footer.section-container {
-    padding: 100px 0;
+    padding: 96px 108px;
   }
 
   .footer .container {
+    flex-direction: row;
     justify-items: start;
+    flex-wrap: wrap;
     align-items: baseline;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
-  .footer-logo-container {
-    margin-right: 120px;
+  .footer-form-container {
+    align-items: start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
   }
   /* #endregion */
 

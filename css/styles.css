@@ -27,8 +27,8 @@
 
   /* Others */
   --items: 1;
-  --col-indent: 72px;
-  --row-indent: 0px;
+  --col-indent: 0px;
+  --row-indent: 72px;
   --transition-time: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --modal-position: 10;
@@ -138,8 +138,6 @@ button {
 .container {
   max-width: 288px;
   margin: 0 auto;
-  /* padding: 0 16px; */
-  padding: 0;
 }
 
 .button {
@@ -200,7 +198,8 @@ button {
 .section-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--col-indent);
+  row-gap: var(--row-indent);
+  column-gap: var(--col-indent);
 }
 
 .section-list-item {
@@ -251,7 +250,7 @@ button {
 .header .container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  align-items: center;
   padding: 16px 0px;
 }
 
@@ -270,7 +269,6 @@ button {
 
 .contacts-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
 }
@@ -344,7 +342,6 @@ button {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--navy-blue);
 
   margin-bottom: 8px;
 }
@@ -449,7 +446,6 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 100%;
 }
 
 .footer .logo {
@@ -517,6 +513,7 @@ button {
   transition: border-color var(--transition-time)
     var(--transition-timing-function);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
 
   font-size: 12px;
   line-height: 2;
@@ -742,7 +739,6 @@ button {
 .checkbox {
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -859,7 +855,7 @@ button {
   color: var(--ocean);
 }
 
-.contacts-list {
+.mobile-menu .contacts-list {
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -869,7 +865,7 @@ button {
   margin-bottom: 48px;
 }
 
-.contacts-link {
+.mobile-menu .contacts-link {
   padding: 0;
   font-weight: 500;
   font-size: 20px;

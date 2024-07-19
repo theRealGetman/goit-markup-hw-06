@@ -1,4 +1,61 @@
 @media only screen and (min-width: 1128px) {
-  .container {
+  /* #region Variables */
+  :root {
+    /* Others */
+    --items: 4;
+    --col-indent: 24px;
+    --row-indent: 48px;
   }
+  /* #endregion */
+
+  /* #region Common */
+  .container {
+    max-width: 736px;
+  }
+
+  .section-container {
+    padding: 120px 0;
+  }
+  /* #endregion */
+
+  /* #region Services */
+  .service-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    background: var(--cloud);
+    margin-bottom: 8px;
+  }
+
+  .service-item-title {
+    text-align: start;
+    color: var(--slate);
+  }
+
+  /* #endregion */
+
+  /* #region Portfolio */
+  .portfolio-item {
+    box-shadow: none;
+  }
+  /* #endregion */
+
+  /* #region Footer */
+  .footer.section-container {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    justify-items: start;
+    align-items: baseline;
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
+  }
+  /* #endregion */
 }
