@@ -38,6 +38,36 @@
 
   /* #endregion */
 
+  /* #region Hero */
+  .hero {
+    max-width: 1440px;
+
+    background-image: linear-gradient(var(--grey), var(--grey)),
+      url("../images/hero/img-bg-desk.jpg");
+  }
+
+  @supports (background-image: url("../images/hero/img-bg-desk.webp")) {
+    .hero {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url("../images/hero/img-bg-desk.webp");
+    }
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url("../images/hero/img-bg-desk@2x.jpg");
+    }
+
+    @supports (background-image: url("../images/hero/img-bg-desk@2x.webp")) {
+      .hero {
+        background-image: linear-gradient(var(--grey), var(--grey)),
+          url("../images/hero/img-bg-desk@2x.webp");
+      }
+    }
+  }
+  /* #endregion */
+
   /* #region Services */
   .service-icon-container {
     display: flex;

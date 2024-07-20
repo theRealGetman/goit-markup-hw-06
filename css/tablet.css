@@ -98,8 +98,32 @@
 
   /* #region Hero */
   .hero {
-    max-width: 1440px;
+    max-width: 768px;
     padding: 188px 0;
+
+    background-image: linear-gradient(var(--grey), var(--grey)),
+      url("../images/hero/img-bg-tab.jpg");
+  }
+
+  @supports (background-image: url("../images/hero/img-bg-tab.webp")) {
+    .hero {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url("../images/hero/img-bg-tab.webp");
+    }
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url("../images/hero/img-bg-tab@2x.jpg");
+    }
+
+    @supports (background-image: url("../images/hero/img-bg-tab@2x.webp")) {
+      .hero {
+        background-image: linear-gradient(var(--grey), var(--grey)),
+          url("../images/hero/img-bg-tab@2x.webp");
+      }
+    }
   }
 
   .hero-title {

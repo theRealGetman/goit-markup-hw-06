@@ -305,11 +305,33 @@ button {
   margin: 0 auto;
 
   background-color: var(--navy-blue);
-  background-image: linear-gradient(var(--grey), var(--grey)),
-    url("../images/hero/img-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  background-image: linear-gradient(var(--grey), var(--grey)),
+    url("../images/hero/img-bg-mob.jpg");
+}
+
+@supports (background-image: url("../images/hero/img-bg-mob.webp")) {
+  .hero {
+    background-image: linear-gradient(var(--grey), var(--grey)),
+      url("../images/hero/img-bg-mob.webp");
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(var(--grey), var(--grey)),
+      url("../images/hero/img-bg-mob@2x.jpg");
+  }
+
+  @supports (background-image: url("../images/hero/img-bg-mob@2x.webp")) {
+    .hero {
+      background-image: linear-gradient(var(--grey), var(--grey)),
+        url("../images/hero/img-bg-mob@2x.webp");
+    }
+  }
 }
 
 .hero-title {
@@ -383,7 +405,7 @@ button {
 /* #region Portfolio */
 .portfolio-item {
   box-shadow: var(--card-shadow);
-  
+
   transition: box-shadow var(--transition-time)
     var(--transition-timing-function);
 }
